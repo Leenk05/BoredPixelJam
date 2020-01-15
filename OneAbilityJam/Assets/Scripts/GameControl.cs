@@ -8,7 +8,7 @@ public class GameControl : MonoBehaviour
 
     public Image coolDown;
 
-    public GameObject pause, textSpace;
+    public GameObject pause, textTimer;
 
     private float startTime;
 
@@ -20,6 +20,7 @@ public class GameControl : MonoBehaviour
     {
         startTime = 0f;
         despausar();
+        textTimer.SetActive(true);
     }
 
     // Update is called once per frame
@@ -27,18 +28,18 @@ public class GameControl : MonoBehaviour
     {
         if (Time.time - startTime <= coolTime) {
             coolDown.fillAmount = (Time.time - startTime) / coolTime;
-            textSpace.SetActive(false);
+           
         }
 
-        else if (Input.GetKeyDown("space")) {
+        else if (Input.GetKeyDown("p")) {
             pausar();
 
 
-            coolDown.fillAmount = 0f;
+            //coolDown.fillAmount = 0f;
         }
 
         else{
-            textSpace.SetActive(true);
+            textTimer.SetActive(true);
         }
     }
 
@@ -50,7 +51,7 @@ public class GameControl : MonoBehaviour
     public void despausar() {
         Time.timeScale = 1f;
         pause.SetActive(false);
-        startTime = Time.time;
+        //startTime = Time.time;
     }
 
 }

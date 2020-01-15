@@ -17,7 +17,7 @@ public class TiroScript : MonoBehaviour
     {
         transform.Translate(new Vector2(0f, speed * Time.timeScale));
 
-        if (transform.position.y >= 100f) {
+        if (transform.position.y >= 100f || transform.position.y <= -100f || transform.position.x >= 100f || transform.position.x < -100f) {
             Destroy(this.gameObject);
         }
     }

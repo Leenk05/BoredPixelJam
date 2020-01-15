@@ -43,7 +43,7 @@ public class CharacterScript : MonoBehaviour
                 if (Input.GetKeyDown("mouse 0")) {
                     //atirar
                     Debug.Log("atirando");
-                    Instantiate(tiro, leftShooter);
+                    Instantiate(tiro, leftShooter.position, leftShooter.rotation);
                     Instantiate(tiro, rightShooter);
 
                 }

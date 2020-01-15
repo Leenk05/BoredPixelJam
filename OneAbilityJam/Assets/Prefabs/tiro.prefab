@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5956168043383227717}
   - component: {fileID: 6182751823429102885}
   - component: {fileID: 114217513612389820}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tiro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 888104069941297539}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5475, y: 2.5761, z: 0}
-  m_LocalScale: {x: 0.6609971, y: 1.6762657, z: 1}
+  m_LocalPosition: {x: -1.3026, y: 2.1085, z: 0}
+  m_LocalScale: {x: 0.17113213, y: 0.74107707, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
